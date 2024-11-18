@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Html</title>
+</head>
+<body>
+    <h1 id="h">World Of Worst</h1>
+    <p id="p"></p>
+
+    <button onclick="demo()">Click me!</button>
+
+
+    <script>
+        function demo(){
+           var x =  document.getElementById("h");//pura object x me aa jyaga.
+           document.getElementById("p").innerText = x.innerText;
+        }
+    </script>
+</body>
+</html>

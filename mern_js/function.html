@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sum =()=> {
+            // var a = parseInt(prompt("Number 1: ", "Enter number.."));
+            // var b = parseInt(prompt("Number 2: ", "Enter number.."));
+            // var c = a+b;
+            // alert("Sum of "+a+" and "+b+" : "+c);
+        }
+        sum(); //actual argument
+
+        //-----------------------------------------------------------
+
+        const add =(a,b)=> {
+            var c = a*b;
+            return c // used to get o/p whenever you need.
+        }
+        const total = add(12, 24);
+        document.write("returned : "+ total); //288
+
+        //-----------------------------------------------------------
+
+        function product(c,d) // formal argument
+        { 
+            var f = c + d;
+            return f // holds result after calculating expression.
+        }
+        const op = product(34,45) // actual argument
+        document.write("<br/>Output : "+op); //79
+
+        //-----------------------------------------------------------
+
+        // ARGUMENT AND RETURN TYPE //
+        //==========================//
+
+        // 1. no argument with no return
+        function a(){
+            document.write("<br/>1. No argument and no return");
+        }
+        a();
+        //-----------------------------------------------------------
+
+        // 2. no argument with return type
+        const j2 =()=>{
+            var2 = "<br/>2. No argument with return type";
+            return(var2);
+        }
+        const result = j2();
+        document.write(result);
+        //-----------------------------------------------------------
+
+        // 3. Argument with no return type
+        const j3 =(m1,m2)=>{
+            m3 = m1*m2;
+            document.write("<br/>3. Argument with no return type "+ m3); //156
+        }
+        j3(12, 13);
+        //-----------------------------------------------------------
+
+        // 4. Argument with return type
+        const j5 =(s1, s2)=>{
+            var s3 = s1*s2;
+            return s3;
+        }
+        const res3 = j5(23, 6);
+        document.write("<br/>4. Argument with return type "+res3); //138
+    </script>
+</body>
+</html>

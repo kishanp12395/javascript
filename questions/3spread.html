@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spread operator 
+
+        /* is used to expand or spread out element of an iterable such as array string, object*/
+
+//............ex-1
+        let num = [1,2,3,4,5];
+
+        //normal way
+        console.log(num);   //[1, 2, 3, 4, 5]
+
+        //by indexing
+        console.log(num[0], num[1], num[2], num[3], num[4]);    // 1 2 3 4 5
+
+        //using ...spread 
+        
+        console.log(...num);    //  1 2 3 4 5
+
+
+//.......................ex-2
+
+
+        let fruits = ['apple', 'banana', 'cherry'];
+
+        let moreFruits1 = ['kivi', fruits, 'berry'];
+
+        let moreFruits2 = ['kivi', ...fruits, 'berry'];
+
+
+        console.log(fruits);  //  ['apple', 'banana', 'cherry']
+
+        console.log(moreFruits1);  // [ 'Dragonfruit', [ 'Apple', 'Banana', 'Cherry' ], 'Elderberry' ]
+        console.log(moreFruits2);  //  [ 'Dragonfruit', 'Apple', 'Banana', 'Cherry', 'Elderberry' ]
+
+
+
+
+//.......................ex-3
+
+        let obj1 = {x:1, y:2};
+
+        let obj2 = {z:3};
+
+        let obj3 = {obj1, obj2};
+
+        let obj4 = {...obj1, ...obj2};
+
+
+        console.log(obj3) //  { obj1: { x: 1, y: 2 }, obj2: { z: 3 } }
+
+        console.log(obj4) //  { x: 1, y: 2, z: 3 }
+
+
+
+    </script>
+</body>
+</html>

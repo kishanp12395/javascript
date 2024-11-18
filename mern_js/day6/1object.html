@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            fname:"kishan",
+            age:23,
+            isStudent:true
+        };
+
+        var keys = person.fname;
+        document.write(keys);
+
+        
+        document.write("<br>");
+
+
+        //list object
+
+        let list = {
+            name : "Aman",
+            class : 12,
+            age : 18,
+            sub : ["Hindi", "English", "Math","Physics","Chemistry"],
+            work :{
+                test:"ok",
+                marks:88,
+                grade: "A"
+            }
+
+        }
+
+        document.write(list.name+"<br>");
+        document.write(list.class+"<br>");
+        document.write(list.sub[2]+"<br>");//access of array element using indexing
+        document.write(list.sub+"<br>");
+        
+        //accessing nested object's element
+        document.write(list.work.grade);
+
+
+
+    </script>
+</body>
+</html>

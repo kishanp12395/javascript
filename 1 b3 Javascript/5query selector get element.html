@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">World of Worst</h1>
+    <img src="../image/eve.jpg" height="400px" id="i" >
+
+    <script>
+
+        var x = confirm("do you want style your image?");
+        var y= document.getElementById("i");
+
+        if(x == true){
+            
+        
+            y.style.height="400px";
+            y.style.width="800px";
+
+            y.style.borderRadius="100px";
+            y.style.border="10px solid red";
+           
+        }else{
+            alert("you press cancel button");
+        }
+
+        
+
+    </script>
+</body>
+</html>

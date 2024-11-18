@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //16. 19 Update the age of "Jane" to 35 in the array [{name: "John", age: 25}, {name: "Jane", age: 30}].// Output: [{name: "John", age: 25}, {name: "Jane", age: 35}]
+
+        var arr = [{name: "John", age: 25}, {name: "Jane", age: 30}];
+        arr.forEach((person)=>{
+            if(person.name == "Jane"){
+                
+                person.age = 35;
+                console.log(arr);
+            }
+       });
+    </script>
+</body>
+</html>

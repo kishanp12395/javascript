@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //local variable
+
+        function greet(){
+            var msg = "Hellowwww!!";
+            console.log(msg);
+        }
+        greet();
+
+        //console.log(msg);  //ReferenceError: msg is not defined
+
+
+
+
+         //global variable
+         var msg = "Hello!!";
+        
+         function groot(){
+            console.log(msg);
+        }
+        groot();
+
+        console.log(msg);
+
+
+
+
+
+        //change the global variable insode the function
+        let a = "HI there";
+
+         function fun(){
+            a = 3;
+         }
+         console.log(a);
+
+         fun();
+
+         console.log(a)
+
+
+
+
+         //variable can be used without declearing it
+
+         function he(){
+            b = 20;
+         }
+         he();
+         console.log(b);
+    </script>
+</body>
+</html>

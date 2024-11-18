@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function Emp(id, name) {
+            this.id = id;
+            this.name = name;
+        }
+
+        function PermanentEmp(id, name) {
+            Emp.call(this,id, name);
+        }
+        document.writeln(new PermanentEmp(5, "kishan").id)
+        document.write(new PermanentEmp(5, "aman").name)
+    </script>
+
+
+
+    <br><br>
+
+
+
+
+
+    <script>
+        function Emp(id, name) {
+            this.id = id;
+            this.name = name;
+        }
+
+        function PermanentEmp(id, name) {
+            Emp.call(this, id, name);
+        }
+        function TemporayEmp(id, name) {
+            Emp.call(this, id, name);
+        }
+
+        var pEmp = new PermanentEmp(1, "Amit")
+        var tEmp = new TemporayEmp(1, "Karan")
+
+        document.writeln(pEmp.id, pEmp.name)
+        document.writeln("<br>")
+        document.writeln(tEmp.id, tEmp.name)
+    </script>
+</body>
+
+</html>

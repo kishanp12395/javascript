@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //relational operator
+
+        // js in operator
+        let lang = ['HTML','CSS', 'JS'];
+        console.log(1 in lang);//true if index 1 exist in array 
+        console.log(3 in lang);//false if index 3  not exixt in array 
+
+
+        const data  = {
+            name:'rahul',
+            age: 21,
+            city: "noida",
+
+        };
+        console.log("name" in data);
+        console.log("address" in data);
+
+        // js instanceof operator
+        console.log(lang instanceof Array);
+        console.log(lang instanceof Object);
+        console.log(lang instanceof String);
+        console.log(lang instanceof Number);
+
+
+
+    </script>
+</body>
+</html>

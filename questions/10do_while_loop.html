@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // display number from 3 to 1
+
+        let i=3;
+        
+        do{
+            console.log(i);
+            i--;
+        }while(i>0);
+
+
+        // sum of positive number
+
+        let num = 0, sum = 0;
+
+        do{
+            sum += num;
+            num = parseInt(prompt("Enter a number: "));
+        }while(num>=0);
+        console.log(`The sum is ${sum}`);
+    </script>
+</body>
+</html>

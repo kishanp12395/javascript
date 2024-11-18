@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Value</title>
+</head>
+
+<body>
+    <label for="">First Value:</label>
+    <input type="text" id="txt1">
+
+    <br>
+
+    <label for="">Second Value:</label>
+    <input type="text" id="txt2">
+
+    <br>
+
+    <label for="">Result:</label>
+    <input type="text" id="txt3">
+
+    <br>
+
+    <button onclick="add()">Add</button>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Multiply</button>
+
+    <script>
+        function add() {
+            var x = parseInt(document.getElementById("txt1").value);
+            var y = parseInt(document.getElementById("txt2").value);
+            var z = document.getElementById("txt3").value = (x + y);
+
+        }
+        function mul() {
+            var x = parseInt(document.getElementById("txt1").value);
+            var y = parseInt(document.getElementById("txt2").value);
+            var a = document.getElementById("txt3").value = (x * y);
+
+        }
+        function div() {
+            var x = parseInt(document.getElementById("txt1").value);
+            var y = parseInt(document.getElementById("txt2").value);
+            var a = document.getElementById("txt3").value = (x / y);
+
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        // comma operator
+        function Func1() {
+            console.log('one');
+            return 'one';
+        }
+        function Func2() {
+            console.log('two');
+            return 'two';
+        }
+        function Func3() {
+            console.log('three');
+            return 'three';
+        }
+
+        // Three expressions are
+        // given at one place
+        let x = (Func3(), Func2(), Func1());
+
+        console.log(x);
+
+
+// a b c d
+        let a = 1, b = 2, c = 3, d = 4;
+        
+        let s = (a,b,c,d)
+        console.log(s)
+
+
+
+        //multiple variable
+
+        console.log('Initial Value:');
+        console.log('a:',a);
+        console.log('b:',b);
+        console.log('c:',c);
+        console.log('d:',d);
+
+
+        a*=2, b*=3, c*=4, d*=5
+        console.log('Updated Value:');
+        console.log('a:',a);
+        console.log('b:',b);
+        console.log('c:',c);
+        console.log('d:',d);
+
+
+    </Script>
+</body>
+
+</html>

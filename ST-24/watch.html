@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: whitesmoke;
+        }
+
+        #box{
+            min-height: 150px;
+            width: 500px;
+            border: 10px solid deeppink;
+            border-radius: 20px;
+            margin: 150px auto;
+            font-size: 100px;
+            color: salmon;
+            background: black;
+            box-shadow: 0px 0px 15px 1px black;
+            font-family: Digital-7;
+            padding: 10px 0;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">kkp</div>
+
+    <script>
+        function watch(){
+            var d = new Date();
+            var dateTime = d.toLocaleTimeString();
+            var box = document.getElementById('box');
+            box.innerHTML = dateTime;
+        }
+        setInterval(watch,1000);
+    </script>
+</body>
+</html>

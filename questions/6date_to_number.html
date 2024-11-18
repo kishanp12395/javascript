@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create date
+        const d1 = new Date();
+
+
+
+
+        console.log(d1);
+
+        // converting to number
+        const res = d1.getTime();
+        console.log(res,'-',typeof res);   //number
+
+
+
+        //date as a string
+        const n = d1.toDateString();
+        console.log('Date: ' + n,typeof n); //string
+
+        //display time
+        const t = d1.toLocaleTimeString();
+        console.log('Time: ' + t,typeof t)  //string
+    </script>
+</body>
+</html>

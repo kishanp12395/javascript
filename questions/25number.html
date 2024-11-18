@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = 5;
+        let num1 = 3.14;
+        console.log(num + "," + num1);
+
+        let n = 4 - "hello";
+        console.log(n);//NaN
+        console.log(typeof n);//number
+
+        let a = isNaN(9);//false
+        let b = isNaN("kkp");//true
+        console.log(a + "," + b);
+
+        let num3 = 5e9;
+        console.log(num3);  // 5000000000
+
+        let num4 = 5e-5;
+        console.log(num4);  // 0.00005
+
+
+        let num5 = 0.1 + 0.2;
+        console.log(num5); // 0.30000000000000004
+        console.log(num5.toFixed(2)); // 0.30
+
+
+        let variable1 = "23"; // string
+        let variable2 = true; // boolean
+
+        //convert to number
+        let result1 = Number(variable1);
+        let result2 = Number(variable2);
+
+        console.log(result1); // 23
+        console.log(result2); // 1
+    </script>
+</body>
+
+</html>

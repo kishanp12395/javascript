@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i = 1; i<=5; i++){
+
+            if(i == 3){
+                break;
+            }
+
+            console.log(i);
+        }
+
+
+
+
+
+        // Program to find the sum of positive numbers
+// the while loop runs infinitely
+// loop terminates only when user enters a negative number
+
+        let sum = 0;
+        while(true){
+            let num = Number(prompt('Enter the number: '));
+
+            if(num < 0){
+
+                break;
+            }else{
+                sum += num;
+            }
+        }
+        console.log(`Sum: ${sum}`);
+    </script>
+</body>
+</html>

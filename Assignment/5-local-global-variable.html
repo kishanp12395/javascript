@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function abc(){
+            var x = 10;//local variable, bound to scope, cannot access outside the block of scope
+
+            document.write(x);
+        }            
+        abc();
+        //document.write(x);
+        
+        document.write("<br>");
+        document.write("<hr>");
+
+
+                    // global variable
+
+        
+        var a = 40;//global scope, not bound, access outside the function
+        function kkp(){
+            document.write("<br>");
+            document.write(a);
+            document.write("<br>");
+            
+        }
+        function kkk(){
+            document.write("<br>");
+            document.write(a);
+            document.write("<br>");
+            
+        }
+        document.write("Value of a=",a);
+        kkp();
+        kkk();
+        
+
+//if we want to access local variable globally using window.object
+
+
+        function asd(){
+            var y = "this is 'y' variable";
+            window.val = 'This is local variable';
+            document.write(window.val);
+            
+        }
+        asd();
+        def();
+        document.write("<br>");
+        document.write(window.val);
+        document.write("<br>");
+        document.write(window.y);
+
+        function def(){
+            document.write("<br>");
+            document.write(window.val);
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //6. Using Filter () words longer than 5 characters.// ["banana", "cherry"]
+     let words = ["apple", "banana", "cherry", "date", "pomegrenate"];
+
+     var newArray = words.filter((item)=>{
+        var len = item.length;
+            if(len > 5){
+                return item;
+            }
+
+     })
+     document.write(newArray)
+
+    </script>
+</body>
+</html>

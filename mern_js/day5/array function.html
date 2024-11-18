@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //*//map   note: store in new array
+        var arr = [1,2,3,4,5,6,7,8,9,10];
+        document.write("old array: "+arr)
+
+        var newArray = arr.map((item,index,array)=>{
+            //if condition for even number
+            if(item%2==0){
+                
+                return item;
+            }
+
+        })
+        document.write("<br>new array: "+newArray)
+
+        document.write("<br><br>")
+
+        //*filter
+        //*forEach
+
+        var arr = [1,'r',3.4,[0,"kkp"]];
+            arr.forEach((item,index,array)=>{
+                document.write(index+"<br>")
+            })()
+
+
+            
+        //reduce()
+        //slice()
+        //splice()
+        //reverse()
+        //push()
+        //pop()
+        //join()
+        //includes()
+        //shift()
+        //unshift()
+
+    </script>
+</body>
+</html>

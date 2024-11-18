@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //date obj=> is pre-defined obj providing some methods to current date and time
+        //====
+        //var var_name = new Date()
+
+        // var.getHours()
+        // getMinutes()
+        // getSeconds()
+        // getMilliseconds()
+        // getDate()
+        // getMonth()
+        // getFullYear()
+        // toLocalTimeString()
+        // toLocalDateString()
+
+        var x = new Date();
+        //alert("Time: "+dob.getHours()+":"+dob.getMinutes()+":"+dob.getSeconds()+":"+dob.getMilliseconds());
+        alert(`Time: ${x.getHours()}: ${x.getMinutes()}: ${x.getSeconds()}: ${x.getMilliseconds()}`);
+
+
+        var a = new Date();
+        document.write(
+            `
+            Date: ${a.getDate()} / ${a.getMonth()+1} / ${a.getFullYear()} <br/>
+            
+            Time: ${a.toLocaleTimeString()} <br/>
+
+            Date: ${a.toLocaleDateString()}
+            `)
+
+    </script>
+</body>
+</html>

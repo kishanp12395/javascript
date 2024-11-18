@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //JavaScript object is a variable that can store multiple data in key-value pairs.
+        const student = {
+            firstname : "Kishan",
+            lastname: "Prajapati",
+            age : 24,
+            email : "Kishanp12395@gmail.com"
+        }
+        console.log(student);
+
+
+        //accessing object properties
+       
+
+        const dog ={
+            name : "Rockey",
+            color : "black",
+            size : "medium" 
+        };
+        console.log(dog);
+
+        //1.---------------access object property using dot
+        console.log(dog.name,dog.color);
+
+        //2-...............modify object property
+        dog.color = "grey";
+        console.log(dog);
+
+        //3-.................add object properties
+        dog.weight = "50kg";
+        dog.tail = "straight";
+        console.log(dog)
+
+        //4-.................delete
+        delete dog.size;
+        console.log(dog);
+
+        //5...............add function in object
+        const emp = {
+            name : "Tony",
+            position : "Officer",
+            salary : 30000,
+
+            greet : function(){
+                console.log(`Hi ${emp.name} welcome to our cpmpany...`);
+            }
+        };
+        emp.greet();
+        console.log(emp.name);
+
+
+
+        //javascript nested object
+
+        //object inside another object
+
+        const stu = {
+            name : "Kishan",
+            age : 20,
+
+            marks:{
+                computer : 90,
+                maths : 98
+            }
+        }
+        console.log(stu);
+
+        console.log(stu.marks.maths)
+
+    </script>
+</body>
+</html>

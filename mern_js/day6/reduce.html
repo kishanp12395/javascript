@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const arr = [1,2,3,4,5];
+        // const res = arr.reduce((acc,item,index,array)=>{
+        //     return acc+item;
+
+        // }) 
+        // document.write(res);
+
+        //note:- reduce is used to apply function to each element of an array, to reduce the array in single value.
+
+        const list = [1,2,3,4,5,6,7,8,9];
+        const add = list.reduce((acc,item,index,arry)=>{
+            return acc+item;
+
+        },0);
+        document.write(add);
+    </script>
+</body>
+</html>

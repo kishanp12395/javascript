@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+    //A JavaScript method is a function defined within an object.
+     const dog = {
+        name : "Rockey",
+        //bark method
+        bark : function(){
+            console.log("Woof!"); 
+        }
+    };
+    dog.bark();
+
+
+
+    //this keyword
+
+    const person = {
+        name : "John",
+        age : 30,
+// this keyword in an object method to access a property of the same object.
+        intro : function(){
+            console.log(`My name is ${this.name} and I am ${this.age} years old`);
+        }
+    }
+    person.intro();
+
+
+
+    //add a method to object
+
+    person.greet = function(){
+        console.log("hello");
+    }
+
+    person.greet();
+   </script>
+</body>
+</html>

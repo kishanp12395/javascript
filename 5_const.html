@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const variable</title>
+</head>
+<body>
+    <script>
+        // Cannot be reassigned.
+        // It has Block Scope
+        // reassigned in different block
+
+        const x = 22;
+        {
+            const x = 90;
+            console.log(x);
+
+            {
+                const x = 77;
+                console.log(x);
+
+            }
+
+            {
+                const x = 66;
+                console.log(x);
+
+            }
+
+        }
+        console.log(x);
+
+        // const x = 2;
+        // console.log(x); illegal
+
+
+
+    </script>
+
+
+    <script>
+        //const in arrays
+
+        const arr1 = ["Kishan", "Sumit", "chandan", "ajay"];
+        console.log(arr1.toString());
+        
+        arr1[2] = "amit";
+        
+        console.log(arr1.toString());
+
+    </script>
+
+
+    <script>
+        //Const in Objects
+const person = {
+    first_name: "Pankaj",
+    last_name: "Singh",
+    Age: 20,
+    About: "Web Developer and Competitive Programmer"
+    };
+
+console.log(person);
+
+// It is possible
+person.first_name = "Aryan";
+person.last_name = "Yadav";
+person.Age = 22;
+person.About = "Commerce undergraduate";
+
+console.log(person);
+
+// it is not possible
+// const person={
+// "first_name":"Aryan",
+// "last_name":"Yadav",
+// "Age":22,
+// "About":"Commerce undergraduate"
+// }
+
+
+    </script>
+    
+</body>
+</html>

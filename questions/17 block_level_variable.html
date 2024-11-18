@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function scope()
+        {
+            let msg  = 'Local';
+
+            if(true)
+            {
+                let msg = 'block-level';
+
+                console.log(`inner scope: ${msg}`)
+            }
+
+            console.log(`outer scope: ${msg}`)
+        }
+        scope();
+    </script>
+</body>
+</html>

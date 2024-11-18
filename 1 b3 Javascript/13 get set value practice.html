@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Set Value</title>
+</head>
+<body>
+
+
+    <input type="text" id="t1">
+
+    <br><br>
+
+    <input type="text" id="t2">
+
+    <br><br>
+
+    <button onclick="swap()">Swap Value</button>
+
+
+
+    <script>
+        function swap(){
+           var x = document.getElementById("t1");
+           var y = document.getElementById("t2");
+
+           var v1 = x.value;
+           var v2 = y.value;
+
+           x.value = v2;
+           y.value = v1;
+        }
+    </script>
+</body>
+</html>

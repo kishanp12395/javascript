@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function JS</title>
+</head>
+<body>
+    <script>
+        //UDF User Defined Function
+
+        // 1. Named function
+        function demo(){
+            document.write("1. Named Function<br/>");
+        }
+        demo(); // call function
+
+        // setInterval("demo()", 1000);
+
+        // 2. Anonymous function
+        const fun1 = function(){
+            document.write("2. Anonymous Function");
+        }
+
+        // 3. Function Expression
+        const txt = function Exp(){
+            document.write("<br/>3. Function Expression");
+        }
+        txt(); // call function
+
+        // 4. Arrow Function
+        const age =()=>{
+            document.write("<br/>4. Arrow Function");
+        }
+        age(); // call function
+
+        // 5. Immediately Invoked Function Expression(IIFE)
+        (function demo1(){
+            document.write("<br/>5. IIFE");
+        })() // call function
+
+        //6. Callback function
+        setInterval(()=>{
+            // alert("<br/>Call Back function"), 5000
+        })
+
+        //7. async function ()
+        const ab = async() =>{
+            // await db data fetch //interpreter waits for next line execution untill this line of code is not completed.
+            document.write("<br/>7. Async Function");
+        }
+
+        async function demo5(){
+            document.write("<br/>7. Async function");
+        }
+        demo5();
+    </script>
+</body>
+</html>

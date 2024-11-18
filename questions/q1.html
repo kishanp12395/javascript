@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //................var keyword.............
+        //var declear = assign
+
+        //var can be re-declear and re-assign
+        var name = 'kishan';
+        console.log(name);
+
+        var name = 'kishan';
+        console.log(name);
+
+
+        //............................let keyword...................
+        //cannot re-declear but re-assign
+        //using let same value can be assigned but same variable name cannot created
+        let age = '24';
+        console.log(age)
+
+        // var age = '45';     //.........SyntaxError: Identifier 'age' has already been declared
+        age = '45';
+        console.log(age)
+
+
+
+
+        //...........................const keyword............................
+        //cannot re-declear or cannot-reassign
+        
+        const que = 5;
+        // que = 5;//.........................TypeError: Assignment to constant variable.
+        console.log(que)
+        
+
+
+
+
+        var a;
+        console.log(a); //...........undefined
+
+        var b = "";
+        console.log(b); // it take space in console but have no value
+
+
+
+
+        // alert("This is a alert box");
+
+        document.write("hello <br>")  //runs on browser on console
+
+
+
+
+
+        //send you confirmation message and after confirmation it show output
+
+        if(confirm("yes you want.....?")){    //show confirmation error
+            document.write("yesssss")
+        }
+
+
+
+
+
+// take a user input using prompt( )
+        var ayu;
+        ayu = window.prompt('Enter your age: ');
+        console.log("Age = " + ayu) ;
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = [10,20,'hi',34.7,true];
+
+        console.log(num[0]);
+        console.log(num[3]);
+        console.log(num[2]);
+
+        //add element using push() at last
+        num.push('sleep');
+
+        console.log(num);
+
+        //remove element by pop at last
+        num.pop();
+
+        console.log(num)
+
+
+        //add element at starting of array unshift()
+
+        num.unshift("work");
+        console.log(num)
+
+        //remove element form start shift()
+
+        num.shift();
+        console.log(num)
+
+
+        //change element of array by index
+
+        num[0] = "Kishan";
+        console.log(num)
+
+
+        //remove element by index from array
+
+        num.splice(2,1);
+        console.log(num)
+
+
+        //length of array
+       console.log( num.length);
+    </script>
+</body>
+</html>

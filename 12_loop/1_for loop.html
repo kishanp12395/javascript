@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+// for (statement 1 ; statement 2 ; statement 3){
+//     code here...}
+
+        // for loop
+        for (let i = 0; i < 4; i++) {
+            //console.log(i);
+            document.writeln(i);
+        }
+
+
+
+        // for loop
+
+
+        //Statement 1 blank
+
+
+        // JavaScript program to illustrate for loop
+        let x = 2;//Statement 1 is used to initialize the counter variable.
+
+        // for loop begins when x = 2
+        // and runs till x <= 4
+        for (; x <= 4; x++) {
+            console.log("Value of x: " + x);
+        }//This shows us clearly that statement 1 is optional. We can leave the portion empty with a semicolon. 
+
+// //Statement 1,2 blank
+
+        let a = 2;
+
+        for (; ; a++) {//This is also an optional statement 2 the testing condition can be blank and Javascript treats it as true if left blank. 
+            console.log("Value of a:" + a);
+            document.writeln("<br>"+a);
+            break;//the loop runs indefinitely if the loop control isn’t broken using the break statement.
+        }
+
+
+//
+
+
+
+        console.log("<br>");
+
+         //Statement 3 Updating Counter variable
+
+        const subjects = ["Maths", "Science", "Polity", "History"];
+        
+        let len = subjects.length;
+        let gfg = " ";
+        for ( let i = 0; i < len; i++) {
+            gfg += subjects[i];
+            //can be increased inside loop
+           
+        }
+        console.log(gfg)
+        document.writeln("<br>"+gfg);
+
+//
+
+
+    </script>
+</body>
+
+</html>

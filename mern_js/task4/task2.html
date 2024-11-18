@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2. Use all set of functions (no parameter no return type, no parameter with return type,with parameter no return type , with parameter with return type) and find the square of a number.
+
+
+
+        //no parameter no return type
+
+        const msg =()=>{
+            document.write("Square=",5*5);
+        }
+        msg()
+
+        document.write("<br><br>");
+        
+        //with parameter no return type
+        const msg0=(a)=>{
+            var square1 = a*a;
+            document.write("Square = "+square1);
+        }     
+        msg0(2)   ;
+        
+        document.write("<br><br>");
+        
+        //no parameter with return type
+        const msg1 =()=>{
+            return 8*8;
+        }
+        var a = msg1();
+        document.write("Square:-"+a)
+        
+        document.write("<br><br>");
+
+
+
+        //with parameter with return type
+
+        const sq=(x)=>{
+            return x*x;
+        }
+        var square = sq(10);
+        document.write("Square: "+square);
+    </script>
+</body>
+</html>

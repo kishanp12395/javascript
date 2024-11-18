@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Output</title>
+</head>
+<body>
+    <p id="kk">
+
+    </p>
+
+    <script>
+        //javascript innerHTML property
+        document.getElementById("kk").innerHTML = "Kishan Prajapati";
+
+    </script>
+
+    <script>
+        //Output using consol.log()
+        console.log("hello Kishan!");
+    </script>
+
+    <script>
+        //Output using document.write()
+        document.write("hello World!!");
+    </script>
+
+    <script>
+        //Output using window.alert()
+        window.alert("Hello, My Name is Kishan ")
+    </script>
+    
+
+    <h2>Print my name</h2>
+    <!-- //Output using window.print() -->
+     <!-- <button onclick="window.print()">
+        Click here to Print.
+     </button> -->
+
+
+
+     <script>
+        //display prompt box
+
+        let userInput = window.prompt("Please enter your name: ");
+
+        if (userInput != null) {
+            window.alert("Hello ," + userInput + "!" );
+        } else {
+            window.alert("You clicked and closed the prompt.")
+        }
+     </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Recursion is a programming technique where a function calls itself repeatedly to solve a problem.
+
+       function counter(count){
+           console.log(count)
+           
+           if(count>1){
+               count = count - 1
+
+               // call counter with new value of count
+               counter(count)
+            }else{
+                return
+            }
+        }
+       counter(5)
+
+
+
+
+       //find a factorial of a number
+       function factorial(num){
+            if(num > 1){
+                return num*factorial(num-1);
+            }
+            else{
+                return 1;
+            }
+       }
+
+        let x = 5;
+
+        let y = factorial(x);
+
+        console.log(`The factorial of ${x} is ${y}`);
+
+    </script>
+</body>
+</html>

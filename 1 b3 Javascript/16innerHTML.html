@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+</head>
+<body>
+    <input type="text" id="txt" placeholder="Enter Something"><b id="msg"></b>
+
+    <br><br>
+
+    <button onclick="demo()" id="btn">Click me!</button>
+
+    <script>
+        function demo(){
+            var x = document.getElementById("txt");
+            var col = document.getElementById("msg")
+            var b = document.getElementById("btn")
+
+            if(x.value == ""){
+                x.style.border="1px solid red";
+                col.innerHTML = "Please enter value in text box";
+                col.style.color="red";
+                b.style.background="red";
+                
+            }else{
+                x.style.border="1px solid green";
+                col.innerHTML = "<i>Value is: </i>" + x.value;
+                col.style.color="green";
+                b.style.background="green";
+            }
+        }
+    </script>
+</body>
+</html>

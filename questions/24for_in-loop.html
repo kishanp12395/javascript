@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const salaries = {
+        Jack: 24000,
+        Paul: 34000,
+        Monica: 55000
+    };
+
+   for(i in salaries){
+    salary = "Rs." + salaries[i];
+    res = `${i} : ${salary}`;
+    console.log(res)
+   }
+
+
+
+   //string
+
+   let str = "kishan";
+
+   for(i in str){
+    res = str[i]
+    console.log(res)
+   }
+
+
+   //array
+   let arr = [1,2,2.4,true,'kkp'];
+   for(i in arr){
+    console.log(arr[i]);
+   }
+    </script>
+</body>
+</html>

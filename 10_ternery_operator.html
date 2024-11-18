@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ternary operator
+        // The expression consists of three operands: the condition, value if true, and value if false.
+
+        // The true value lies between “?” & “:” and is executed if the condition returns true. Similarly, the false value lies after “:” and is executed if the condition returns false
+
+//single condition
+        function kkp() {
+            let marks = 40;
+            let result = (marks > 30)?"Pass":
+                "Fail";
+
+            console.log(result);
+
+        }
+        kkp();
+
+
+        //multiple condition
+        function kk(){
+            let mark = 90;
+            let res = (mark < 33)?"fail":
+                      (mark < 60)?"pass":
+                      (mark < 80)?"average":
+                      (mark < 90)?"excellent":"Top";
+            document.write(res)
+        }
+        kk();
+
+
+    </script>
+</body>
+</html>

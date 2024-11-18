@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //14.Filter the objects where the age is greater than 25 in the array [{name: "John", age: 25}, {name: "Jane", age: 30}].// Output: [{name: "Jane", age: 30}]
+
+        let arr = [{name: "John", age: 25}, {name: "Jane", age: 30}];
+        let newArray = arr.filter((item)=>{
+            if(item.age>25){
+                
+                    return item;
+                
+            }
+        })
+        document.write(newArray);
+        console.log(newArray);
+
+    </script>
+</body>
+</html>

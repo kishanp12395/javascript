@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1">
+
+    <input type="submit" onclick="check()" value="check">
+
+    <script>
+        function check(){
+            var input1 = document.getElementById("input1");
+
+            if(input1.value.length == 6){
+                input1.style.border="2px solid green";
+                input1.style.borderRadius="20px";
+            }else{
+                input1.style.border="2px solid red";
+                input1.style.borderRadius="20px";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*1. Use all user defined function (Named function , function expression, arrow function,
+        anonymous function, IIFE, callback function) and print a statement in console screen.*/
+
+        //named function
+        function fun(fname,lname){
+            var name = fname +" "+ lname;
+            document.writeln("Name: "+name);
+        }
+        fun("Kishan","Prajapati");
+
+        document.write("<br>");
+        document.write("<br>");
+        
+        //arrow function
+        
+        const demo = () =>{
+            document.writeln("This is a arrow function ");
+        }
+        demo()
+
+        document.write("<br>");
+        document.write("<br>");
+        
+        //function expression
+        
+        const demo1 = function kkp(){
+            document.write("This is a function expression")
+        }
+        demo1()
+        document.write("<br>");
+        document.write("<br>");
+        
+        //anonymous function
+        
+        const msg1 = function(){
+            document.write("This is a anonymous function");
+        }
+        msg1()
+        
+        document.write("<br>");
+        document.write("<br>");
+
+        //immediate invoked function expression
+
+        (msg2 = (h,w) =>{
+            var m = h+" "+w;
+            document.write(m)
+        })("hello","world");
+
+
+        //callback function
+
+        //setInterval(msg1,1000)
+
+        // setInterval(msg3 = () =>{
+        //     document.write("Message received")
+
+        // },1000);
+
+        //async function
+        
+        document.write("<br>");
+        document.write("<br>");
+
+
+        const xy = async() =>{
+            //await db data fetch
+            document.write("Data Fetched");
+        }
+        xy()
+
+
+
+    </script>
+</body>

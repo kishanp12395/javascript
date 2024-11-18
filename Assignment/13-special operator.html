@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Special operator");
+        document.write("<br>");
+        document.write("Conditional operator ?:;");
+        //conditional operator
+        function kkp(){
+            
+            let marks = 490;
+            let result = (marks < 39) ? "Pass":
+                marks < 60 ? "Average" :
+                marks < 80 ? "Excellent": "super";
+
+            document.write("Result= ",result);
+        }
+        document.write("<br>");
+        kkp();
+
+//comma operator
+        document.write("<br>");
+        document.write("Comma operator ,");
+         let a = (1,2,3);
+         document.write("Value of a=",a);// assign highest value
+//delete operator
+         document.write("<br>");
+         document.write("<br>");
+         document.write("Delete operator (delete)");
+         let person={
+             fname :'kishan',
+             lname :'prajapati',
+             age : 28
+            };
+            delete person.lname;
+            document.write("Delete lname of object (person)=", person);
+            document.write("<br>");
+            
+            //in operator
+            document.write("<h3>in operator</h3>");
+            let x = "age" in person ? "Yes" : "No";
+            document.write("<br>");
+            document.write("If age exist in obj (person): "+ x);
+
+            //instanceof
+
+
+            document.write("<br>");
+            document.write("If person is a instance: " + (person instanceof person));
+            
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+            
+
+//new operator
+
+            // class abc(){
+                
+            // };
+
+            let c = new abc();
+
+
+            //void
+
+            js : void func();
+
+
+    </script>
+</body>
+</html>

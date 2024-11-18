@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [{name:"kishan",
+                      class:12
+                    },
+
+                    {grade:"A",
+                     marks:78
+                    },
+                    
+                    [1,2,"ok","by"]
+                ];
+
+        document.write(arr[0].class+"<br>");
+        document.write(arr[1].grade+"<br>");
+        document.write(arr[2][0]+"<br>");
+        
+        arr.forEach((item)=>{
+            
+            document.write(item[2][2]+"<br>");
+        })
+    </script>
+</body>
+</html>
