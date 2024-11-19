@@ -55,22 +55,3 @@ getPosts()
 
 
 
-
-
-
- 
-// fetch(URL)
-//     .then(response=>{
-//         if(response.ok){
-//             return response.json()
-//         }else{
-//             throw new Error("Something wrong!!!")
-//         }
-//     })
-//     .then(data=>{
-//         console.log(data)
-//     })
-//     .catch(error=>{
-//         console.log("Something error")
-//         console.log(error)
-//     })
